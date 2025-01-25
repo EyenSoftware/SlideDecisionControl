@@ -49,6 +49,28 @@ struct ContentView: View {
 }
 ```
 
+### Customization
+
+```swift
+import SlideDecisionControl
+
+struct ContentView: View {
+    var body: some View {
+        SlideDecisionControl(
+			imageAccept: .system(name: "heart"),
+			textAccept: "Slide to Love",
+			imageMiddle: .system(name: "bubble"),
+			imageReject: .system(name: "xmark.circle"),
+			textReject: "Slide to Hate"
+		) { _ in
+		}
+        .padding()
+    }
+}
+```
+
+![Customized](Demo/customized.gif)
+
 ## Requirements
 
 - iOS 17.0+
@@ -56,7 +78,7 @@ struct ContentView: View {
 
 ## License
 
-SwipeDecisionControl is available under the MIT license. See the [LICENSE](LICENSE) file for more information.
+SlideDecisionControl is available under the MIT license. See the [LICENSE](LICENSE) file for more information.
 
 ## Contribution
 
@@ -68,5 +90,5 @@ We’d love to hear your thoughts! Feel free to open an issue for suggestions, b
 
 ---
 
-**Made with ❤️ by Eyen(https://eyen.fr)**
+**Made with ❤️ by [Eyen](https://eyen.fr)**
 
