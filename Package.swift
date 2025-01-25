@@ -6,20 +6,16 @@ import PackageDescription
 let package = Package(
 	name: "SlideDecisionControl",
 	platforms: [
-		.iOS(.v18)
+		.iOS(.v17)
 	],
 	products: [
 		.library(name: "SlideDecisionControl", targets: ["SlideDecisionControl"]),
-	],
-	dependencies: [
-		.package(url: "https://github.com/realm/SwiftLint", from: "0.58.2")
 	],
 	targets: [
 		.target(
 			name: "SlideDecisionControl",
 			swiftSettings: [
 				.swiftLanguageMode(.v6)
-			],
-			plugins: [.plugin(name: "SwiftLintBuildToolPlugin", package: "SwiftLint")]),
+			]),
 	]
 )
